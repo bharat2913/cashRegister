@@ -35,7 +35,12 @@ next.addEventListener('click', () => {
 button.addEventListener('click', function validateBillAndCashAmount() {
   hideMessage();
 
-  if (cashGiven.value && cashGiven.value > 0 && billAmount.value >= 0) {
+  if (
+    cashGiven.value &&
+    cashGiven.value > 0 &&
+    billAmount.value >= 0 &&
+    billAmount.value
+  ) {
     if (cashGiven.value >= billAmount.value) {
       const returningAmount = cashGiven.value - billAmount.value;
       calculateChange(returningAmount);
@@ -46,7 +51,6 @@ button.addEventListener('click', function validateBillAndCashAmount() {
   } else if (cashGiven.value < 0) {
     showMessage('Cash Given should be positive');
   } else {
-    // showMessage('Invalid Bill Ammount');
     showMessage('Enter number only');
   }
 });
