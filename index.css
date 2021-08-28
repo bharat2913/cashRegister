@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    padding: 2rem;
+    
+    width: 60%;
+}
+
+.description {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+#billAmount, #cashGiven {
+    margin: 6px 0px;
+    width: 90%;
+    height: 40px;
+    padding: 0 1rem;
+}
+
+#cashGivenText {
+    margin-top: 14px;
+}
+
+#errorMessage {
+    color: red;
+    margin: 1rem;
+}
+
+#check, #next {
+    padding: 0.3rem 1rem;
+    margin: 0.5rem;
+
+}
+
+#caption {
+    margin: 1rem;
+    font-size: 20px;
+}
+
+td, th, table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+tr{
+    margin-bottom: 1rem;
+}
